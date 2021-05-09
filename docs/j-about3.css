@@ -6,34 +6,19 @@ body{
 nav div a img{
     width: 36px;
 }
-/* Alert Styling */
-.alert{
-    position: absolute;
-    top: 70px;
-    width: 100%;
-}
 /* Color White */
 .color-white{
     color: rgb(207, 207, 207) !important;
 }
-/* Crousel Items Styling */
-.carousel-item{
-    position: relative;
-    top: 62px;
-    height: 700px;
-    z-index: -1;
-}
-.carousel-item img{
-    width: 100%;
-    height: 100%;
-}
+
+/* Section1 Styling */
 #section1{
     position: absolute;
     background: url("/bootstrapimagres3/pexels-cliff-booth-4058411.jpg") no-repeat center center/cover;
     top: 0;
     left: 0;
     width: 100%;
-    height: 800px;
+    height: 100vh;
     z-index: -1;
 }
 #search{
@@ -43,7 +28,7 @@ nav div a img{
 /* Section2 Styling */
 #section2{
     position: relative;
-    top: 742px;
+    top: calc(100vh - 38px);
 }
 .main-container{
     display: flex;
@@ -52,53 +37,25 @@ nav div a img{
     align-items: center;
     margin-top: 33px;
 }
-.main-container h1{
-    padding-bottom: 92px;
-}
 .main-container .container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.item-container{
-    display: flex;
-    flex-direction: column;
-}
 .item-container p{
     padding-top: 40px;
-    padding-right: 22px;
-}
-.main-container div img{
-    margin: 44px 0;
+    padding-right: 8px;
 }
 .main-container div h4{
     position: relative;
     top: -15px;
-    margin-top: 52px;
-}
-.main-container h1{
-    text-decoration: underline;
-}
-.bw-ul{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 62px;
-}
-.bw-ul a{
-    color: #17b7b7;
-    text-decoration: none;
-}
-.bw-ul a:hover{
-    color: red;
 }
 
 /* Footer Styling */
 footer{
-    top: 830px;
+    top: calc(100vh + 52px);
     position: relative;
-    width: 100%;
+    width: 98.7vw;
     display: flex;
     justify-content: center;
     background-color: black;
@@ -107,7 +64,7 @@ footer{
     overflow: hidden;
 }
 footer #fsec{
-    padding: 0 1%;
+    padding: 22px;
 }
 footer #fsec div {
     color: white;
@@ -124,6 +81,7 @@ footer #fsec div {
 }
 .change-btn{
     border-radius: 33px;
+    padding: 0 22px;
 }
 .change-search{
     width: 33%;
@@ -137,31 +95,48 @@ footer #fsec div {
     width: 66%;
     height: 54px;
 }
+.disp-flex{
+    width: 66%;
+    height: 54px;
+    display: flex;
+}
 .bg-light{
     background-color: #ecf0f3!important;
 }
 .mar3{
-    margin: 0 3%;
+    margin: 0 22px;
+}
+h1{
+    padding: 48px 0;
 }
 .h3{
-    margin: 22px 0;
+    margin-bottom: 22px;
 }
-@media(max-width: 684px){
-    .bw-ul {
-        flex-direction: column;
-        align-items: flex-start;
+@media(max-width: 1330px){
+    footer{
+        width: 100vw;
+        top: calc(100vh + 122px);
     }
 }
-@media(max-width: 675px){
-    #section1 {
-        background: url("/bootstrapimagres3/pexels-cliff-booth-4058411.jpg") no-repeat center left/cover;
-        left: -40%;
-        width: 140%;
+@media(max-width: 280px){
+    footer {
+        width: 99.9%;
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    form{
+        display: none !important;
     }
 }
-@media(max-width: 218px){
-    #section1 {
-        left: -100%;
-        width: 200%;
+@media(max-width: 660px) and (min-width: 600px){
+    #section1{
+        top: 47px;
+    }
+}
+@media(max-width: 260px) and (min-width: 200px){
+    #section1{
+        top: 47px;
     }
 }

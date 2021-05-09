@@ -6,12 +6,6 @@ body{
 nav div a img{
     width: 36px;
 }
-/* Alert Styling */
-.alert{
-    position: absolute;
-    top: 70px;
-    width: 100%;
-}
 /* Color White */
 .color-white{
     color: rgb(207, 207, 207) !important;
@@ -27,13 +21,16 @@ nav div a img{
     width: 100%;
     height: 100%;
 }
+
+
+/* Section1 Styling */
 #section1{
     position: absolute;
     background: url("/bootstrapimagres3/pexels-dom-j-45058.jpg") no-repeat center center/cover;
     top: 0;
     left: 0;
     width: 100%;
-    height: 800px;
+    height: 100vh;
     z-index: -1;
 }
 #search{
@@ -43,7 +40,7 @@ nav div a img{
 /* Section2 Styling */
 #section2{
     position: relative;
-    top: 742px;
+    top: calc(100vh - 38px);
 }
 .main-container{
     display: flex;
@@ -62,7 +59,7 @@ nav div a img{
 }
 .item-container p{
     padding-top: 40px;
-    padding-right: 22px;
+    padding-right: 8px;
 }
 .main-container div img{
     margin: 44px 0;
@@ -71,26 +68,22 @@ nav div a img{
     position: relative;
     top: -15px;
 }
-.main-container h1{
-    text-decoration: underline;
+.s-container, .n-container{
+    flex-direction: column;
+    align-items: center;
+    margin: 23px 3%;
 }
 .s-container{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 23px 3%;
 }
 .n-container{
     display: none;
-    flex-direction: column;
-    align-items: center;
-    margin: 23px 3%;
 }
 /* Footer Styling */
 footer{
-    top: 830px;
+    top: calc(100vh + 52px);
     position: relative;
-    width: 100%;
+    width: 98.7vw;
     display: flex;
     justify-content: center;
     background-color: black;
@@ -99,7 +92,7 @@ footer{
     overflow: hidden;
 }
 footer #fsec{
-    padding: 0 1%;
+    padding: 22px;
 }
 footer #fsec div {
     color: white;
@@ -116,6 +109,7 @@ footer #fsec div {
 }
 .change-btn{
     border-radius: 33px;
+    padding: 0 22px;
 }
 .change-search{
     width: 33%;
@@ -135,18 +129,28 @@ footer #fsec div {
 .mar3{
     margin: 0 3%;
 }
+h1{
+    padding: 48px 0;
+}
 .h3{
     margin: 22px 0;
 }
-@media(max-width: 1176px){
-    .s-container{
-        display: none;
+.s-container {
+    margin: 23px 0 !important;
+}
+@media(max-width: 1330px){
+    footer{
+        width: 100vw;
+        top: calc(100vh + 122px);
+    }
+}
+@media(max-width: 1090px){
+    .s-container {
+        display: none !important;
     }
     .n-container{
         display: flex;
     }
-}
-@media(max-width: 792px){
     .item-container{
         display: flex;
         flex-direction: column;
@@ -155,5 +159,29 @@ footer #fsec div {
     }
     .item-container p{
         padding: 0 22px;
+    }
+}
+@media(max-width: 800px) and (min-width: 600px){
+    img{
+        width: 78%;
+    }
+    .n-container img {
+        width: 190% !important;
+    }
+}
+@media(max-width: 280px){
+    footer {
+        width: 99.9%;
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .item-container {
+        width: 104%;
+    }
+    .main-container div img {
+        margin: 44px 0;
+        width: 89%;
     }
 }

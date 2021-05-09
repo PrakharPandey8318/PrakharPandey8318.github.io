@@ -6,12 +6,6 @@ body{
 nav div a img{
     width: 36px;
 }
-/* Alert Styling */
-.alert{
-    position: absolute;
-    top: 70px;
-    width: 100%;
-}
 /* Color White */
 .color-white{
     color: rgb(207, 207, 207) !important;
@@ -33,7 +27,7 @@ nav div a img{
     top: 0;
     left: 0;
     width: 100%;
-    height: 800px;
+    height: 100vh;
     z-index: -1;
 }
 #search{
@@ -43,7 +37,7 @@ nav div a img{
 /* Section2 Styling */
 #section2{
     position: relative;
-    top: 747px;
+    top: calc(100vh - 8px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,14 +70,14 @@ nav div a img{
 /* Section3 Styling */
 #section3{
     position: relative;
-    top: 820px;
+    top: calc(100vh - 26px);
     width: 94%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 #section3 h1{
-    padding: 22px;
+    padding: 72px;
 }
 #section3 form{
     width: 54.9%;
@@ -96,13 +90,14 @@ nav div a img{
 #sec4{
     display: flex;
     width: 100%;
-    position: absolute;
-    top: 2932px;
+    position: relative;
+    top: calc(100vh + 56px);
     justify-content: center;
 }
 #sec4 #s4-cntnr{
     width: 65%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 #sec4 #s4-cntnr div{
@@ -110,19 +105,27 @@ nav div a img{
     width: 59px;
     height: 58px;
     display: flex;
+    margin: 22px;
     justify-content: center;
     align-items: center;
     border-radius: 32px;
+    transition: all;
+    transition-duration: 0.4s;
+}
+#sec4 #s4-cntnr div a{
+    display: flex;
+    justify-content: center;
 }
 #sec4 #s4-cntnr div img{
-    width: 42px;
+    width: 79%;
 }
 /* Footer Styling */
 footer{
-    top: 1122px;
+    top: calc(100vh + 56px);
     position: relative;
-    width: 100%;
+    width: 98.7vw;
     display: flex;
+    padding: 22px;
     justify-content: center;
     background-color: black;
     color: white;
@@ -147,6 +150,7 @@ footer #fsec div {
 }
 .change-btn{
     border-radius: 33px;
+    padding: 0 22px;
 }
 .change-search{
     width: 33%;
@@ -169,8 +173,18 @@ footer #fsec div {
 .h3{
     margin: 22px 0;
 }
-@media(max-width: 991px){
-    .alert{
-        top: 49px;
+
+@media(max-width: 1330px){
+    footer{
+        width: 100vw;
+        top: calc(100vh + 122px + 62px);
+    }
+}
+@media(max-width: 362px){
+    #section2-container a img {
+        width: 85%;
+    }
+    #section3 form {
+        width: 87%;
     }
 }

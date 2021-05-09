@@ -35,7 +35,7 @@
             <a class="nav-link color-dark" href="/j-exercise.html" tabindex="-1">Exercises</a>
           </li>
           <li class="nav-item pointer">
-            <a class="nav-link color-dark" href="/j-about3.html" tabindex="-1">About Us</a>
+            <a class="nav-link color-dark" href="/j-about3.html" tabindex="-1">About</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -45,12 +45,6 @@
       </div>
     </div>
   </nav>
-  <!-- Alert -->
-  <div class="alert alert-success alert-dismissible fade show" role="alert">
-    <strong>Note:&nbsp;&nbsp;</strong> This website is just for demo purpose, anything written in this site may be right
-    or it may be wrong.So, don't follow anything written in this site without professional consultation.
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-  </div>
   <!-- Section1 -->
   <section id="section1"></section>
   <!-- section2 -->
@@ -100,10 +94,10 @@
   </section>
   <section id="sec4">
     <div id="s4-cntnr">
-      <div><a href=""><img src="/bootstrapimagres3/icons8-facebook-100.png" alt=""></a></div>
-      <div><a href=""><img src="/bootstrapimagres3/icons8-google-100.png" alt=""></a></div>
-      <div><a href=""><img src="/bootstrapimagres3/icons8-instagram-500.png" alt=""></a></div>
-      <div><a href=""><img src="/bootstrapimagres3/icons8-twitter-100.png" alt=""></a></div>
+      <div id="facebook"><a href="#"><img src="/bootstrapimagres3/icons8-facebook-100.png" alt=""></a></div>
+      <div id="twitter"><a href="#"><img src="/bootstrapimagres3/icons8-google-100.png" alt=""></a></div>
+      <div id="instagram"><a href="#"><img src="/bootstrapimagres3/icons8-instagram-500.png" alt=""></a></div>
+      <div id="gmail"><a href="#"><img src="/bootstrapimagres3/icons8-twitter-100.png" alt=""></a></div>
     </div>
   </section>
   <!-- Footer -->
@@ -125,6 +119,61 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     -->
+
+
+    <script>
+      let fb=document.getElementById("facebook");
+      let tw=document.getElementById("twitter");
+      let ig=document.getElementById("instagram");
+      let gm=document.getElementById("gmail");
+
+
+      function facebookg(){
+        fb.style.width="65px";
+        fb.style.height="64px";
+      }
+      function gmailg(){
+        gm.style.width="65px";
+        gm.style.height="64px";
+      }
+      function instagramg(){
+        ig.style.width="65px";
+        ig.style.height="64px";
+      }
+      function twitterg(){
+        tw.style.width="65px";
+        tw.style.height="64px";
+      }
+
+
+      function facebooks(){
+        fb.style.width="59px";
+        fb.style.height="58px";
+      }
+      function gmails(){
+        gm.style.width="59px";
+        gm.style.height="58px";
+      }
+      function instagrams(){
+        ig.style.width="59px";
+        ig.style.height="58px";
+      }
+      function twitters(){
+        tw.style.width="59px";
+        tw.style.height="58px";
+      }
+
+
+      fb.addEventListener("mouseenter",facebookg);
+      tw.addEventListener("mouseenter",twitterg);
+      ig.addEventListener("mouseenter",instagramg);
+      gm.addEventListener("mouseenter",gmailg);
+
+      fb.addEventListener("mouseleave",facebooks);
+      tw.addEventListener("mouseleave",twitters);
+      ig.addEventListener("mouseleave",instagrams);
+      gm.addEventListener("mouseleave",gmails);
+    </script>
 </body>
 
 </html>
