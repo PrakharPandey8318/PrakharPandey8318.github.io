@@ -226,6 +226,11 @@ footer #fsec div {
     margin: 22px 0;
 }
 
+@media(max-width: 700px){
+    #section3 {
+        font-size: 0.6rem;
+    }
+}
 @media(max-width: 585px){
     #section3 #div2{
         width: 100%;
@@ -237,7 +242,10 @@ footer #fsec div {
 }
 @media(max-width: 362px){
     #section2-container a img {
-        width: 85%;
+        width: 62%;
+    }
+    #section3{
+        font-size: 0.8rem;
     }
     #section4 form {
         width: 87%;
