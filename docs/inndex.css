@@ -21,10 +21,15 @@ nav div a img{
     width: 100%;
     height: 100%;
 }
+
+
+
+/* Section1 Styling */
 #section1{
     position: absolute;
-    background: url("/bootstrapimagres3/gina-lin-m27OTMegUyA-unsplash.jpg") no-repeat center center/cover;
-    top: 0;
+    background: url("/bootstrapimagres3/gym-526995.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    top: 66px;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -34,10 +39,14 @@ nav div a img{
     height: 46px;
     margin-top: 6px;
 }
+
+
+
+
 /* Section2 Styling */
 #section2{
     position: relative;
-    top: calc(100vh - 8px);
+    top: calc(100vh + 62px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,40 +76,81 @@ nav div a img{
     width: 55%;
     margin: 55px 0;
 }
+
+
+
+
 /* Section3 Styling */
 #section3{
+    top: calc(100vh + 240px);
     position: relative;
-    top: calc(100vh - 26px);
+    width: 100%;
+    height: 80vh;
+    
+}
+#div1{
+    content: "";
+    position: absolute;
+    background: url("/bootstrapimagres3/jogging-2343558_1920.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    padding: 0 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#section3 #div2{
+    width: 49%;
+    height: 19%;
+    text-align: center;
+}
+
+
+
+/* section4 Styling */
+#section4{
+    position: relative;
+    top: calc(100vh + 274px);
     width: 94%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#section3 h1{
+#section4 h1{
     padding: 72px;
 }
-#section3 form{
-    width: 54.9%;
+#section4 form{
+    width: 83%;
 }
-#section3-name-section{
+#section4-name-section{
     margin-bottom: 17px;
     display: flex;
     flex-direction: column;
 }
-#sec4{
+
+
+
+
+/* Section5 Styling */
+#section5{
     display: flex;
     width: 100%;
     position: relative;
-    top: calc(100vh + 56px);
+    top: calc(100vh + 364px);
     justify-content: center;
 }
-#sec4 #s4-cntnr{
-    width: 65%;
+#section5 #s4-cntnr{
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-#sec4 #s4-cntnr div{
+#section5 #s4-cntnr div{
     background-color: #e3e3e3;
     width: 59px;
     height: 58px;
@@ -112,18 +162,20 @@ nav div a img{
     transition: all;
     transition-duration: 0.4s;
 }
-#sec4 #s4-cntnr div a{
+#section5 #s4-cntnr div a{
     display: flex;
     justify-content: center;
 }
-#sec4 #s4-cntnr div img{
+#section5 #s4-cntnr div img{
     width: 79%;
 }
+
+
 /* Footer Styling */
 footer{
-    top: calc(100vh + 56px);
+    top: calc(100vh + 470px);
     position: relative;
-    width: 98.7vw;
+    width: 100%;
     display: flex;
     padding: 22px;
     justify-content: center;
@@ -174,17 +226,20 @@ footer #fsec div {
     margin: 22px 0;
 }
 
-@media(max-width: 1330px){
-    footer{
-        width: 100vw;
-        top: calc(100vh + 122px + 62px);
+@media(max-width: 585px){
+    #section3 #div2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 }
 @media(max-width: 362px){
     #section2-container a img {
         width: 85%;
     }
-    #section3 form {
+    #section4 form {
         width: 87%;
     }
 }

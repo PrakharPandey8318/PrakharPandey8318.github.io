@@ -1,0 +1,175 @@
+/* Body Styling */
+body{
+    scroll-behavior: smooth;
+}
+/* Navbar image Styling */
+nav div a img{
+    width: 36px;
+}
+/* Color White */
+.color-white{
+    color: rgb(207, 207, 207) !important;
+}
+/* Crousel Items Styling */
+.carousel-item{
+    position: relative;
+    top: 62px;
+    height: 700px;
+    z-index: -1;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* Section1 Styling */
+#section1{
+    position: absolute;
+    background: url("/bootstrapimagres3/gym-5977600_1920\ \(1\).jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    top: 63px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+#search{
+    height: 46px;
+    margin-top: 6px;
+}
+
+
+/* Section2 Styling */
+#section2{
+    position: relative;
+    top: calc(100vh + 82px);
+    text-align: center;
+}
+#section2 .main-container{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 82px;
+}
+#section2 .main-container .item-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px;
+    width: 41%;
+}
+#section2 .main-container .item-container .container,#section2 .main-container .item-container h3{
+    text-align: center;
+    margin: 22px 0;
+}
+#section2 img{
+    width: 28%;
+}
+
+
+
+
+/* section3 Styling */
+#section3{
+    position: relative;
+    top: calc(100vh + 200px);
+    height: 80vh;
+}
+#section3 div{
+    position: absolute;
+    background: url("/bootstrapimagres3/cathy-pham-FLQh5dkd4zk-unsplash\ \(3\).jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+/* section4 Styling */
+#section4{
+    position: relative;
+    top: calc(100vh + 300px);
+    text-align: center;
+}
+
+#section4 .main-container h1{
+    margin-bottom: 122px;
+}
+#section4 .main-container #main-container-cntnr-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+#section4 .main-container .item-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin: 32px;
+    width: 41%;
+}
+#section4 .main-container .item-container .container,#section4 .main-container .item-container h3{
+    text-align: center;
+    margin: 22px 0;
+}
+#section4 img{
+    width: 28%;
+}
+
+
+/* Footer Styling */
+footer{
+    top: calc(100vh + 370px);
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 22px;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding-top: 13px;
+    overflow: hidden;
+}
+footer #fsec div {
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+}
+/* Utilities */
+.d-flex{
+    width: 66%;
+    height: 54px;
+}
+
+@media(max-width: 756px){
+    #section2 .main-container {
+        justify-content: center;
+    }
+    #section2 .main-container .item-container {
+        width: 100%;
+    }
+    #section4 {
+        top: calc(100vh + 277px);
+    }
+    #section4 .main-container h1 {
+        margin-bottom: 31px;
+    }
+    #section4 .main-container {
+        justify-content: center;
+    }
+    #section4 .main-container .item-container {
+        width: 100%;
+    }
+}
+
