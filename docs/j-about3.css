@@ -10,18 +10,6 @@ nav div a img{
 .color-white{
     color: rgb(207, 207, 207) !important;
 }
-/* Crousel Items Styling */
-.carousel-item{
-    position: relative;
-    top: 62px;
-    height: 700px;
-    z-index: -1;
-}
-.carousel-item img{
-    width: 100%;
-    height: 100%;
-}
-
 
 
 
@@ -85,7 +73,17 @@ footer #fsec div {
     width: 66%;
     height: 54px;
 }
-
+@media(max-width: 991px){
+    .color-dark{
+        color: white !important;
+    }
+    #active{
+        color: red !important;
+    }
+    .navbar-collapse {
+        margin-top: 16px;
+    }
+}
 @media(max-width: 756px){
     #section2 .main-container {
         justify-content: center;
